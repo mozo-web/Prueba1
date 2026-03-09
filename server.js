@@ -7,9 +7,7 @@ app.get("/", (req, res) => {
   res.send("Hola desde Render ");
 });
 
-app.use(express.static("public.zip"));
-
-app.use(express.static("8.jpg"))
+app.use(express.static("public"));
 
 app.listen(PORT, () => {
   console.log("Servidor corriendo en puerto " + PORT);
